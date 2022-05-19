@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("/fonts/Open Sans Condensed/OpenSansCondensed-Light.ttf");
+}
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+body header {
+  height: 230px;
+  width: auto;
+  background-color: #dcdcdc;
+}
+body header .header {
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+body header .header .header_logo {
+  float: left;
+  margin-top: 65px;
+}
+body header .header .header_tel {
+  float: right;
+  width: 260px;
+  height: 90px;
+  margin-top: 65px;
+}
+body header .header .header_tel a {
+  text-decoration: none;
+  color: #767676;
+  font-family: "Open Sans Condensed";
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 46px;
+}
+body nav {
+  height: 80px;
+  width: auto;
+  background-color: #777777;
+}
+body .slider {
+  height: 400px;
+  width: auto;
+  background-color: #f8f8f8;
+  background-image: url("/img/slider_img.png");
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */
