@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap')
+@font-face
+  font-family: 'OpenSansCondensedLight'
+  src: url('/fonts/Open Sans Condensed/OpenSansCondensedLight.eot')
+  src: url('/fonts/Open Sans Condensed/OpenSansCondensedLight.eot') format('embedded-opentype'), url('/fonts/Open Sans Condensed/OpenSansCondensedLight.woff2') format('woff2'), url('/fonts/Open Sans Condensed/OpenSansCondensedLight.woff') format('woff'), url('/fonts/Open Sans Condensed/OpenSansCondensedLight.ttf') format('truetype'), url('/fonts/Open Sans Condensed/OpenSansCondensedLight.svg#OpenSansCondensedLight') format('svg')
+$font_pt_sans: 'PT Sans', sans-serif
+$font_open_sans: 'OpenSansCondensedLight'
+
+html
+  height: 100%
+body
+  position: relative
+  display: flex
+  flex-direction: column
+  margin: 0
+  padding: 0 0 220px 0
+  font-family: $font_pt_sans
+  font-size: 14px
+  line-height: 22px
+  width: auto
+  min-height: 100%
+
+header
+  height: 230px
+  width: 100%
+  background-color: #dcdcdc
+  .header
+    width: 980px
+    padding: 0 10px
+    margin: 0 auto
+    .header_logo
+      float: left
+      margin-top: 65px
+      img
+        width: 273px
+        height: 100px
+    .header_tel
+      float: right
+      width: 260px
+      height: 90px
+      margin-top: 65px
+      a
+        text-decoration: none
+        color: #767676
+        font-family: $font_open_sans
+        font-size: 40px
+        font-weight: 300
+        letter-spacing: 1px
+        line-height: 46px
+nav
+  position: absolute
+  top: 230px
+  height: 80px
+  width: 100%
+  text-align: center
+  background-color: #777777
+  ul
+    display: inline-block
+    width: 980px
+    margin: 0 auto
+    padding: 25px 10px
+    list-style: none
+    white-space: nowrap
+    li
+      display: inline-block
+      border-right: solid white 2px
+      padding: 0 20px
+      white-space: nowrap
+      a
+        color: white
+        text-decoration: none
+        letter-spacing: 1px
+        font-size: 30px
+    li :hover
+      text-decoration: underline 2px white
+  ul :last-of-type
+    border: none
+
+.slider
+  position: absolute
+  top: 310px
+  height: 400px
+  width: 100%
+  background-color: #f8f8f8
+  background-image: url("/img/slider_img.png")
+  background-position: center
+
+main
+  position: absolute
+  top: 710px
+  width: 100%
+  height: 560px
+  .content
+    width: 980px
+    padding: 0 10px
+    margin: 30px auto 195px auto
+    .news_block
+      float: left
+      width: 260px
+      height: auto
+      background-color: #777777
+      color: white
+      padding: 0 55px 100px 35px
+      margin-right: 60px
+      h2
+        font-size: 40px
+        line-height: 46px
+        font-weight: 700
+        margin: 0
+        padding: 20px 0
+      .news_info
+        padding-bottom: 25px
+        max-height: 91px
+    a
+      display: inline-block
+      text-decoration: none
+      color: white
+      hyphens: auto
+    .archive_news
+      float: right
+      text-decoration: underline
+
+    .article
+      width: 570px
+      height: auto
+      color: #767676
+      float: right
+      hyphens: auto
+      h1
+        font-size: 40px
+        font-weight: 400
+        line-height: 22px
+        margin: 0
+        padding: 30px 0
+
+
+footer
+  position: absolute
+  top: 1495px
+  height: 220px
+  width: 100%
+  color: white
+  background-color: #777777
+  .footer_content
+    width: 980px
+    margin: 0 auto
+    padding: 50px 10px 0 10px
+    .copyright
+      float: left
+      margin-right: 150px
+      a
+        text-decoration: none
+        color: white
+    .footer_menu
+      display: inline-block
+      list-style: none
+      margin: 0
+      a
+        color: white
+        line-height: 26px
+    .dev_company
+      float: right
+      img
+        float: left
+        margin-top: 5px
+      a
+        margin-left: 10px
+        display: inline-block
+        color: white
+        text-decoration: none
+        span
+          text-decoration: underline
+
+
+
+
