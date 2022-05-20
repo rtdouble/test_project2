@@ -8,17 +8,21 @@ $font_open_sans: 'OpenSansCondensedLight'
 
 html
   height: 100%
+  min-height: 100%
 body
-  position: relative
-  display: flex
-  flex-direction: column
   margin: 0
-  padding: 0 0 220px 0
+  padding: 0
   font-family: $font_pt_sans
   font-size: 14px
   line-height: 22px
   width: auto
+  height: 100%
   min-height: 100%
+  .container
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    min-height: 100vh
 
 header
   height: 230px
@@ -48,8 +52,6 @@ header
         letter-spacing: 1px
         line-height: 46px
 nav
-  position: absolute
-  top: 230px
   height: 80px
   width: 100%
   text-align: center
@@ -77,8 +79,6 @@ nav
     border: none
 
 .slider
-  position: absolute
-  top: 310px
   height: 400px
   width: 100%
   background-color: #f8f8f8
@@ -86,57 +86,52 @@ nav
   background-position: center
 
 main
-  position: absolute
-  top: 710px
-  width: 100%
   height: 560px
-  .content
-    width: 980px
-    padding: 0 10px
-    margin: 30px auto 195px auto
-    .news_block
-      float: left
-      width: 260px
-      height: auto
-      background-color: #777777
-      color: white
-      padding: 0 55px 100px 35px
-      margin-right: 60px
-      h2
-        font-size: 40px
-        line-height: 46px
-        font-weight: 700
-        margin: 0
-        padding: 20px 0
-      .news_info
-        padding-bottom: 25px
-        max-height: 91px
-    a
-      display: inline-block
-      text-decoration: none
-      color: white
-      hyphens: auto
-    .archive_news
-      float: right
-      text-decoration: underline
+  width: 980px
+  padding: 0 10px
+  margin: 30px auto 195px auto
+  .news_block
+    float: left
+    width: 260px
+    height: auto
+    background-color: #777777
+    color: white
+    padding: 0 55px 100px 35px
+    margin-right: 60px
+    h2
+      font-size: 40px
+      line-height: 46px
+      font-weight: 700
+      margin: 0
+      padding: 20px 0
+    .news_info
+      padding-bottom: 25px
+      max-height: 91px
+  a
+    display: inline-block
+    text-decoration: none
+    color: white
+    hyphens: auto
+  .archive_news
+    float: right
+    text-decoration: underline
 
-    .article
-      width: 570px
-      height: auto
-      color: #767676
-      float: right
-      hyphens: auto
-      h1
-        font-size: 40px
-        font-weight: 400
-        line-height: 22px
-        margin: 0
-        padding: 30px 0
+  .article
+    width: 570px
+    height: auto
+    color: #767676
+    float: right
+    hyphens: auto
+    h1
+      font-size: 40px
+      font-weight: 400
+      line-height: 22px
+      margin: 0
+      padding: 30px 0
 
 
 footer
-  position: absolute
-  top: 1495px
+  margin-top: auto
   height: 220px
   width: 100%
   color: white
